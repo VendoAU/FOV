@@ -1,14 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.glasslauncher.example.mixin",
+  "package": "com.vendoau.fov.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-    "ExampleMixin"
-  ],
-  "server": [
-  ],
   "client": [
+    "GameOptionsMixin",
+    "GameRendererMixin",
+    "OptionMixin",
+    "OptionsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

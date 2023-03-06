@@ -1,44 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "fov",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "FOV",
+  "description": "Change your field of view",
   "authors": [
-    "Me!"
+    "VendoAU"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/BIN-fabric-example-mod"
+    "homepage": "https://glass-repo.net/repo/mod/field_of_view",
+    "sources": "https://github.com/VendoAU/FOV",
+    "issues": "https://github.com/VendoAU/FOV/issues"
   },
-
   "license": "CC0-1.0",
-  "icon": "assets/examplemod/icon.png",
-
+  "icon": "assets/fov/icon.png",
   "environment": "*",
   "entrypoints": {
-    "stationapi:event_bus": [
-      "net.glasslauncher.example.events.init.AchievementListener",
-      "net.glasslauncher.example.events.init.BlockListener",
-      "net.glasslauncher.example.events.init.ItemListener",
-      "net.glasslauncher.example.events.init.PlayerHandlerListener",
-      "net.glasslauncher.example.events.init.RecipeListener"
-    ],
-    "stationapi:event_bus_client": [
-      "net.glasslauncher.example.events.init.ModelListener",
-      "net.glasslauncher.example.events.init.KeyBindingListener",
-      "net.glasslauncher.example.events.init.TextureListener",
-      "net.glasslauncher.example.events.ingame.KeyPressedListener"
-    ],
-    "stationapi:event_bus_server": [
-      "net.glasslauncher.example.events.init.ServerInitListener"
+    "client": [
+      "com.vendoau.fov.FOV"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json"
+    "fov.mixins.json"
   ],
-
   "depends": {
     "minecraft": "1.0.0-beta.7.3"
   }
